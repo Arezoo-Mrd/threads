@@ -1,7 +1,7 @@
 <template>
     <div id="MainLayout" class="h-screen">
         <div class="w-full max-w-[500px] mx-auto">
-            <div id="TopMenu" class="w-full flex items-center justify-center px-2 h-10 my-2">
+            <div id="TopMenu" class="flex items-center justify-center w-full h-10 px-2 my-2">
                 <img class="w-[35px]" src="/threads-logo.png" alt="">
             </div>
         </div>
@@ -13,7 +13,7 @@
                 <button @click="navigateTo('/')" class="w-full h-full">
                     <Icon name="material-symbols:home-outline" size="35" color="#ffffff" />
                 </button>
-                <button @click="userStore.isMenuOverlay = true" class="w-full h-full">
+                <button  @click="userStore.isMenuOverlay = true" class="w-full h-full">
                     <Icon name="material-symbols:edit-square-outline-rounded" size="32" color="#ffffff" />
                 </button>
                 <button @click="userStore.isLogoutOverlay = true" class="w-full h-full">
@@ -28,6 +28,7 @@
 <script setup>
 import { useUserStore } from '../stores/user'
 const userStore = useUserStore()
+
 
 </script>
 

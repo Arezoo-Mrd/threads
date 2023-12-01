@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-icon',
     '@nuxtjs/tailwindcss',
-    // '@nuxtjs/supabase',
+    '@nuxtjs/supabase',
     '@pinia/nuxt',
     "@vite-pwa/nuxt",
   ],
@@ -13,5 +13,6 @@ export default defineNuxtConfig({
       bucketUrl: process.env.BUCKET_URL
     }
   },
+  
   devtools: { enabled: true }
 })
